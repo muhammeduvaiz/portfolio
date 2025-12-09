@@ -1,0 +1,21 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    height: 6rem;
+    /* h-24 equivalent */
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: transparent;
+        
+    }
+}

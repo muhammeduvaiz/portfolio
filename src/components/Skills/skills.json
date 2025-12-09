@@ -1,0 +1,25 @@
+{
+    "skills": [
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "JavaScript"
+        },
+        {
+            "name": "React.js"
+        },
+        {
+            "name": "Node.js"
+        },
+        {
+            "name": "Express.js"
+        },
+        {
+            "name": "MongoDB"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-height: 100vh;
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        padding-bottom: 10rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.content {
+    max-width: 600px;
+}

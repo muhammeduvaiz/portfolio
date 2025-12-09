@@ -1,0 +1,50 @@
+{
+    "projects": [
+        {
+            "name": "Personal portfolio",
+            "description": "Designed and developed a fully responsive personal website using HTML and CSS to showcase professional portfolio, skills.",
+            "image": "/img/project1.png",
+            "framwork": [
+                {
+                    "title1": "HTML",
+                    "title2": "CSS"
+                }
+            ],
+            "link": "https://github.com/username/project1"
+        },
+        {
+            "name": "Public Transport Accident Report & Ticket Generation",
+            "description": "Created a full responsive website using Mern stack as final year project. It is real time public issue that existing",
+             "image": "/img/project2.png",
+            "framwork": [
+                {
+                    "title1": "HTML",
+                    "title2": "CSS",
+                    "title3": "React.js",
+                    "title4": "MongoDB",
+                    "title5": "Node.js",
+                    "title6": "Express.js"
+                    
+                }
+            ],
+            "link": "https://github.com/username/project1"
+        },
+        {
+            "name": "Company Website",
+            "description": "Designed and developed a website in mern stack as a freelance work for a company called The first one business solution for there client called ka zenith building materials.",
+             "image": "/img/project3.png",
+            "framwork": [
+                {
+                    "title1": "HTML",
+                    "title2": "CSS",
+                    "title3": "React.js",
+                    "title4": "MongoDB",
+                    "title5": "Node.js",
+                    "title6": "Express.js"
+                    
+                }
+            ],
+            "link": "https://github.com/username/project1"
+        }
+    ]
+}
