@@ -1,6 +1,25 @@
 import React, { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { LogoLoop } from '../../component/LogoLoop';
+// import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { FaGithub,FaLinkedin,FaInstagram,FaWhatsapp  } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+const techLogos = [
+  { node: <FaGithub />, title: "Github", href: "https://github.com/muhammeduvaiz" },
+  { node: <FaLinkedin />, title: "Linkedin", href: "https://www.linkedin.com/in/muhammed-uvaiz/" },
+  { node: <FaInstagram />, title: "Instagram", href: "https://www.instagram.com/uvaiz.insta/" },
+  { node: <FaXTwitter />, title: "Twitter", href: "https://x.com/MuhammedUvaiz" },
+  { node: <FaWhatsapp />, title: "Whatsapp", href: "https://wa.me/971544997697" },
+];
+
+// Alternative with image sources
+const imageLogos = [
+  { src: "/logos/company1.png", alt: "Company 1", href: "https://company1.com" },
+  { src: "/logos/company2.png", alt: "Company 2", href: "https://company2.com" },
+  { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
+];
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -54,8 +73,40 @@ const Contact = () => {
                     </div>
                     <div className='mt-20 flex gap-8 justify-center opacity-70'>
                         {/* Add social icons here if needed */}
-                        <span>© 2025 Muhammed Uvaiz</span>
+                       
+
+
+    <div style={{ height: '47px', position: 'relative', overflow: 'hidden'}}>
+      {/* Basic horizontal loop */}
+      <LogoLoop
+        logos={techLogos}
+        speed={80}
+        direction="left"
+        logoHeight={40}
+        gap={40}
+        hoverSpeed={0}
+        scaleOnHover
+        fadeOut
+        // fadeOutColor="rgba(0, 0, 0, 0.35)"
+        ariaLabel="Technology partners"
+      />
+      
+      {/* Vertical loop with deceleration on hover */}
+      {/* <LogoLoop
+        logos={techLogos}
+        speed={80}
+        direction="up"
+        logoHeight={48}
+        gap={40}
+        hoverSpeed={20}
+        fadeOut
+      /> */}
+    </div>
+                        
                     </div>
+                </div>
+                <div className='mt-20 text-center text-gray-500'>
+                    <span>© 2025 Muhammed Uvaiz</span>
                 </div>
             </div>
         </div>
