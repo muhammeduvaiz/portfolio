@@ -14,7 +14,7 @@ const Projects = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: comp.current,
-                    start: "top 80%", // Animates when top of projects hits 80% viewport
+                    start: "top 70%", // Animates when top of projects hits 80% viewport
                 }
             })
 
@@ -27,7 +27,7 @@ const Projects = () => {
                 .from('.projects *', {
                     yPercent: 50,
                     opacity: 0,
-                    duration: 0.5,
+                    duration: 0.3,
                     stagger: 0.15,
                     ease: 'power3.out'
                 }, '-=0.5')

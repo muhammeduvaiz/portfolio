@@ -3,23 +3,23 @@ import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { LogoLoop } from '../../component/LogoLoop';
 // import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
-import { FaGithub,FaLinkedin,FaInstagram,FaWhatsapp  } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const techLogos = [
-  { node: <FaGithub />, title: "Github", href: "https://github.com/muhammeduvaiz" },
-  { node: <FaLinkedin />, title: "Linkedin", href: "https://www.linkedin.com/in/muhammed-uvaiz/" },
-  { node: <FaInstagram />, title: "Instagram", href: "https://www.instagram.com/uvaiz.insta/" },
-  { node: <FaXTwitter />, title: "Twitter", href: "https://x.com/MuhammedUvaiz" },
-  { node: <FaWhatsapp />, title: "Whatsapp", href: "https://wa.me/971544997697" },
+    { node: <FaGithub />, title: "Github", href: "https://github.com/muhammeduvaiz" },
+    { node: <FaLinkedin />, title: "Linkedin", href: "https://www.linkedin.com/in/muhammed-uvaiz/" },
+    { node: <FaInstagram />, title: "Instagram", href: "https://www.instagram.com/uvaiz.insta/" },
+    { node: <FaXTwitter />, title: "Twitter", href: "https://x.com/MuhammedUvaiz" },
+    { node: <FaWhatsapp />, title: "Whatsapp", href: "https://wa.me/971544997697" },
 ];
 
 // Alternative with image sources
-const imageLogos = [
-  { src: "/logos/company1.png", alt: "Company 1", href: "https://company1.com" },
-  { src: "/logos/company2.png", alt: "Company 2", href: "https://company2.com" },
-  { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
-];
+// const imageLogos = [
+//     { src: "/logos/company1.png", alt: "Company 1", href: "https://company1.com" },
+//     { src: "/logos/company2.png", alt: "Company 2", href: "https://company2.com" },
+//     { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
+// ];
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -56,7 +56,7 @@ const Contact = () => {
     }, [])
 
     return (
-        <div id='contact' ref={comp} className='min-h-screen flex flex-col items-center justify-center text-white py-20'>
+        <div id='contact' ref={comp} className='min-h-screen flex flex-col items-center justify-center text-white py-12 md:py-20'>
             <div className='text-center max-w-2xl px-4'>
                 <h2 className='contact-title text-3xl md:text-5xl font-bold mb-8'>Get In Touch</h2>
                 <div className='contact-content'>
@@ -66,33 +66,33 @@ const Contact = () => {
                     <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
                         <a
                             href="mailto:muhammeduvaiz@outlook.com"
-                            className="border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-black transition-colors"
+                            className="border-2 border-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white hover:text-black transition-colors"
                         >
                             Say Hello
                         </a>
                     </div>
-                    <div className='mt-20 flex gap-8 justify-center opacity-70'>
+                    <div className='mt-12 md:mt-20 flex gap-8 justify-center opacity-70'>
                         {/* Add social icons here if needed */}
-                       
 
 
-    <div style={{ height: '47px', position: 'relative', overflow: 'hidden'}}>
-      {/* Basic horizontal loop */}
-      <LogoLoop
-        logos={techLogos}
-        speed={80}
-        direction="left"
-        logoHeight={40}
-        gap={40}
-        hoverSpeed={0}
-        scaleOnHover
-        fadeOut
-        // fadeOutColor="rgba(0, 0, 0, 0.35)"
-        ariaLabel="Technology partners"
-      />
-      
-      {/* Vertical loop with deceleration on hover */}
-      {/* <LogoLoop
+
+                        <div style={{ height: '47px', position: 'relative', overflow: 'hidden' }}>
+                            {/* Basic horizontal loop */}
+                            <LogoLoop
+                                logos={techLogos}
+                                speed={80}
+                                direction="left"
+                                logoHeight={40}
+                                gap={40}
+                                hoverSpeed={0}
+                                scaleOnHover
+                                fadeOut
+                                // fadeOutColor="rgba(0, 0, 0, 0.35)"
+                                ariaLabel="Technology partners"
+                            />
+
+                            {/* Vertical loop with deceleration on hover */}
+                            {/* <LogoLoop
         logos={techLogos}
         speed={80}
         direction="up"
@@ -101,11 +101,11 @@ const Contact = () => {
         hoverSpeed={20}
         fadeOut
       /> */}
-    </div>
-                        
+                        </div>
+
                     </div>
                 </div>
-                <div className='mt-20 text-center text-gray-500'>
+                <div className='mt-12 md:mt-20 text-center text-gray-500'>
                     <span>© 2025 Muhammed Uvaiz</span>
                 </div>
             </div>
