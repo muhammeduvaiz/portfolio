@@ -5,6 +5,7 @@ import { LogoLoop } from '../../component/LogoLoop';
 // import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import './contact.css';
 
 const techLogos = [
     { node: <FaGithub />, title: "Github", href: "https://github.com/muhammeduvaiz" },
@@ -74,8 +75,8 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className='w-full mt-12 md:mt-20 opacity-70'>
-                <div className="w-full" style={{ height: '47px', position: 'relative', overflow: 'hidden' }}>
+            <div className='mt-12 md:mt-20 opacity-70'>
+                <div className="logo-container md:w-[600px]" style={{ height: '47px', position: 'relative', overflow: 'hidden' }}>
                     {/* Basic horizontal loop */}
                     <LogoLoop
                         logos={techLogos}
