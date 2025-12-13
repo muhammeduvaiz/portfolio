@@ -71,43 +71,29 @@ const Contact = () => {
                             Say Hello
                         </a>
                     </div>
-                    <div className='mt-12 md:mt-20 flex gap-8 justify-center opacity-70'>
-                        {/* Add social icons here if needed */}
-
-
-
-                        <div style={{ height: '47px', position: 'relative', overflow: 'hidden' }}>
-                            {/* Basic horizontal loop */}
-                            <LogoLoop
-                                logos={techLogos}
-                                speed={80}
-                                direction="left"
-                                logoHeight={40}
-                                gap={40}
-                                hoverSpeed={0}
-                                scaleOnHover
-                                fadeOut
-                                // fadeOutColor="rgba(0, 0, 0, 0.35)"
-                                ariaLabel="Technology partners"
-                            />
-
-                            {/* Vertical loop with deceleration on hover */}
-                            {/* <LogoLoop
-        logos={techLogos}
-        speed={80}
-        direction="up"
-        logoHeight={48}
-        gap={40}
-        hoverSpeed={20}
-        fadeOut
-      /> */}
-                        </div>
-
-                    </div>
                 </div>
-                <div className='mt-12 md:mt-20 text-center text-gray-500'>
-                    <span>© 2025 Muhammed Uvaiz</span>
+            </div>
+
+            <div className='w-full mt-12 md:mt-20 opacity-70'>
+                <div className="w-full" style={{ height: '47px', position: 'relative', overflow: 'hidden' }}>
+                    {/* Basic horizontal loop */}
+                    <LogoLoop
+                        logos={techLogos}
+                        speed={80}
+                        direction="left"
+                        logoHeight={40}
+                        gap={40}
+                        hoverSpeed={0}
+                        scaleOnHover
+                        fadeOut
+                        // fadeOutColor="rgba(0, 0, 0, 0.35)"
+                        ariaLabel="Technology partners"
+                    />
                 </div>
+            </div>
+
+            <div className='mt-12 md:mt-20 text-center text-gray-500'>
+                <span>© 2025 Muhammed Uvaiz</span>
             </div>
         </div>
     )
