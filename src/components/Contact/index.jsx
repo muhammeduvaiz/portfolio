@@ -76,7 +76,7 @@ const Contact = () => {
             </div>
 
             <div className='mt-12 md:mt-20 opacity-70'>
-                <div className="logo-container md:w-[600px]" style={{ height: '47px', position: 'relative', overflow: 'hidden' }}>
+                <div className="logo-container md:w-[350px]" style={{ height: '47px', position: 'relative', overflow: 'hidden' }}>
                     {/* Basic horizontal loop */}
                     <LogoLoop
                         logos={techLogos}
