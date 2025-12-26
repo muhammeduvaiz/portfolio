@@ -31,7 +31,7 @@
         },
         {
             "name": "Company Website",
-            "description": "Designed and developed a website in mern stack as a freelance work for a company called The first one business solution for there client called ka zenith building materials.",
+            "description": "Designing and developing a website in mern stack as a freelance work for a company called The first one business solution for there client called ka zenith building materials.",
              "image": "/img/project3.png",
             "framwork": [
                 {
@@ -56,7 +56,6 @@
                     "title4": "Node.js",
                     "title5": "Express.js",
                     "title6": "bootstrap"
-                    
                 }
             ],
             "link": "https://github.com/username/project1"
